@@ -19,8 +19,15 @@
         background-position: center center;
         background-attachment: fixed;
         padding: 20px;
-        text-align: center;
+        text-align: center; /* Memastikan teks di body terpusat secara default */
         color: #ffffff;
+        display: flex; /* Menggunakan Flexbox pada body */
+        flex-direction: column; /* Mengatur item di body menjadi kolom */
+        align-items: center; /* Memusatkan item secara horizontal di body */
+        justify-content: flex-start; /* Mengatur konten rata atas */
+        min-height: 100vh; /* Memastikan body memenuhi tinggi viewport */
+        box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar total body */
+        margin: 0; /* Menghilangkan margin default body */
     }
 
     body::before {
@@ -37,21 +44,24 @@
     .header-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px; /* Margin header sedikit dikurangi untuk semua layar */
+        align-items: center; /* Memusatkan item header secara horizontal */
+        margin-bottom: 20px;
+        width: 100%; /* Header memenuhi lebar body */
+        max-width: 600px; /* Lebar maksimum header tetap 600px */
     }
 
     h1 {
         margin-bottom: 0;
         color: #ffffff;
-        font-size: 2.2em; /* Ukuran font judul sedikit dikurangi untuk semua layar */
+        font-size: 2.2em;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        text-align: center;
+        text-align: center; /* Memastikan judul terpusat */
         letter-spacing: 1px;
+        word-wrap: break-word; /* Memastikan judul tidak keluar container di layar kecil */
     }
 
     .logo-tabanan {
-        width: 120px; /* Ukuran logo dikurangi untuk semua layar */
+        width: 120px;
         margin-bottom: 10px;
         filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.4));
     }
@@ -59,27 +69,29 @@
     .link-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Memusatkan item link container secara horizontal */
         width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
+        max-width: 600px; /* Lebar maksimum link container tetap 600px */
+        margin: 0 auto; /* Memusatkan link container di halaman */
     }
 
     .link-button {
         display: flex;
-        align-items: center;
-        width: 90%; /* Lebar tombol diubah menjadi 90% dari container */
-        max-width: 500px; /* Max width tombol sedikit diperbesar dari versi mobile sebelumnya */
-        margin: 10px auto;
-        padding: 16px 20px; /* Padding tombol dikurangi sedikit dari versi desktop sebelumnya */
+        align-items: center; /* Memusatkan ikon dan teks dalam tombol secara vertikal */
+        justify-content: center; /* Memusatkan ikon dan teks dalam tombol secara horizontal */
+        width: 90%;
+        max-width: 500px;
+        margin: 10px auto; /* Memusatkan tombol link dalam container */
+        padding: 16px 20px;
         background: linear-gradient(135deg, #404040, #f2b7b8);
         color: #ffffff;
         text-decoration: none;
         border-radius: 8px;
-        font-size: 17px; /* Ukuran font tombol dikurangi sedikit dari versi desktop sebelumnya */
+        font-size: 17px;
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s;
         box-shadow: 0 2px 4px rgba(0,0,0,0.35);
         border: 1px solid #ffffff;
+        box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar total tombol */
     }
 
     .link-button:hover {
@@ -91,7 +103,7 @@
 
     .link-button i {
         margin-right: 15px;
-        font-size: 22px; /* Ukuran ikon tombol dikurangi sedikit dari versi desktop sebelumnya */
+        font-size: 22px;
         color: #ffffff;
         text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
     }
@@ -99,31 +111,31 @@
     /* Media Query untuk layar tablet (landscape dan portrait, perkiraan lebar 768px - 1023px) */
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         body {
-            padding: 15px; /* Padding body sedikit dikurangi untuk tablet */
+            padding: 15px;
         }
 
         .header-container {
-            margin-bottom: 25px; /* Margin header sedikit disesuaikan untuk tablet */
+            margin-bottom: 25px;
         }
 
         h1 {
-            font-size: 2.5em; /* Ukuran font judul sedikit diperbesar untuk tablet */
+            font-size: 2.5em;
         }
 
         .logo-tabanan {
-            width: 130px; /* Ukuran logo sedikit diperbesar untuk tablet */
+            width: 130px;
         }
 
         .link-button {
-            width: 85%; /* Lebar tombol sedikit dikurangi untuk tablet, agar tidak terlalu lebar */
-            max-width: 550px; /* Max width tombol disesuaikan untuk tablet */
-            padding: 17px 22px; /* Padding tombol sedikit disesuaikan untuk tablet */
-            font-size: 18px; /* Ukuran font tombol sedikit diperbesar untuk tablet */
-            border-radius: 9px; /* Radius border tombol sedikit disesuaikan untuk tablet */
+            width: 85%;
+            max-width: 550px;
+            padding: 17px 22px;
+            font-size: 18px;
+            border-radius: 9px;
         }
 
         .link-button i {
-            font-size: 24px; /* Ukuran ikon tombol sedikit diperbesar untuk tablet */
+            font-size: 24px;
         }
     }
 
@@ -131,32 +143,32 @@
     /* Media Query untuk layar smartphone (max-width: 767px) */
     @media screen and (max-width: 767px) {
         body {
-            padding: 10px; /* Padding body paling kecil untuk smartphone */
+            padding: 10px;
         }
 
         .header-container {
-            margin-bottom: 15px; /* Margin header paling kecil untuk smartphone */
+            margin-bottom: 15px;
         }
 
         h1 {
-            font-size: 1.8em; /* Ukuran font judul lebih kecil untuk smartphone */
+            font-size: 1.8em;
         }
 
         .logo-tabanan {
-            width: 100px; /* Ukuran logo paling kecil untuk smartphone */
+            width: 100px;
         }
 
         .link-button {
-            width: 95%; /* Tombol link hampir memenuhi lebar layar smartphone */
-            max-width: none; /* Tidak ada batasan max-width untuk smartphone */
-            margin: 8px auto; /* Margin tombol lebih kecil untuk smartphone */
-            padding: 14px 18px; /* Padding tombol lebih kecil untuk smartphone */
-            font-size: 16px; /* Ukuran font tombol paling kecil untuk smartphone */
-            border-radius: 7px; /* Radius border tombol lebih kecil untuk smartphone */
+            width: 95%;
+            max-width: none;
+            margin: 8px auto;
+            padding: 14px 18px;
+            font-size: 16px;
+            border-radius: 7px;
         }
 
         .link-button i {
-            font-size: 20px; /* Ukuran ikon tombol lebih kecil untuk smartphone */
+            font-size: 20px;
         }
     }
 </style>
