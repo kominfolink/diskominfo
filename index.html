@@ -12,22 +12,21 @@
   <style>
     body {
         font-family: Arial, sans-serif;
-        /* Gambar latar belakang tetap ada dan responsif */
-        background-image: url('5bab44cc233ff2a79_2400x1492.png'); /* **PENTING:** Ganti dengan path gambar Anda */
+        background-image: url('5bab44cc233ff2a79_2400x1492.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
         padding: 20px;
-        text-align: center; /* Memastikan teks di body terpusat secara default */
+        text-align: center;
         color: #ffffff;
-        display: flex; /* Menggunakan Flexbox pada body */
-        flex-direction: column; /* Mengatur item di body menjadi kolom */
-        align-items: center; /* Memusatkan item secara horizontal di body */
-        justify-content: flex-start; /* Mengatur konten rata atas */
-        min-height: 100vh; /* Memastikan body memenuhi tinggi viewport */
-        box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar total body */
-        margin: 0; /* Menghilangkan margin default body */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        box-sizing: border-box;
+        margin: 0;
     }
 
     body::before {
@@ -44,10 +43,10 @@
     .header-container {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Memusatkan item header secara horizontal */
+        align-items: center;
         margin-bottom: 20px;
-        width: 100%; /* Header memenuhi lebar body */
-        max-width: 600px; /* Lebar maksimum header tetap 600px */
+        width: 100%;
+        max-width: 600px;
     }
 
     h1 {
@@ -55,9 +54,9 @@
         color: #ffffff;
         font-size: 2.2em;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        text-align: center; /* Memastikan judul terpusat */
+        text-align: center;
         letter-spacing: 1px;
-        word-wrap: break-word; /* Memastikan judul tidak keluar container di layar kecil */
+        word-wrap: break-word;
     }
 
     .logo-tabanan {
@@ -69,19 +68,19 @@
     .link-container {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Memusatkan item link container secara horizontal */
+        align-items: center;
         width: 100%;
-        max-width: 600px; /* Lebar maksimum link container tetap 600px */
-        margin: 0 auto; /* Memusatkan link container di halaman */
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .link-button {
         display: flex;
-        align-items: center; /* Memusatkan ikon dan teks dalam tombol secara vertikal */
-        justify-content: center; /* Memusatkan ikon dan teks dalam tombol secara horizontal */
+        align-items: center;
+        justify-content: center;
         width: 90%;
         max-width: 500px;
-        margin: 10px auto; /* Memusatkan tombol link dalam container */
+        margin: 10px auto;
         padding: 16px 20px;
         background: linear-gradient(135deg, #404040, #f2b7b8);
         color: #ffffff;
@@ -91,7 +90,7 @@
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s;
         box-shadow: 0 2px 4px rgba(0,0,0,0.35);
         border: 1px solid #ffffff;
-        box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar total tombol */
+        box-sizing: border-box;
     }
 
     .link-button:hover {
@@ -139,8 +138,7 @@
         }
     }
 
-
-    /* Media Query untuk layar smartphone (max-width: 767px) */
+    /* Media Query untuk layar smartphone (max-width: 767px) - **PENYESUAIAN LEBIH LANJUT** */
     @media screen and (max-width: 767px) {
         body {
             padding: 10px;
@@ -158,16 +156,25 @@
             width: 100px;
         }
 
+        .link-container {
+            padding-left: 15px; /* **NEW:** Padding kiri untuk link container */
+            padding-right: 15px; /* **NEW:** Padding kanan untuk link container */
+        }
+
         .link-button {
-            width: 95%;
-            max-width: none;
-            margin: 8px auto;
+            width: auto; /* **MODIFIED:** Lebar tombol menjadi otomatis */
+            max-width: 95%; /* **MODIFIED:** Max width tombol menjadi 95% dari container */
+            margin-left: auto; /* **NEW:** Margin kiri otomatis untuk memusatkan */
+            margin-right: auto; /* **NEW:** Margin kanan otomatis untuk memusatkan */
+            margin-top: 8px;
+            margin-bottom: 8px;
             padding: 14px 18px;
             font-size: 16px;
             border-radius: 7px;
         }
 
         .link-button i {
+            margin-right: 10px;
             font-size: 20px;
         }
     }
