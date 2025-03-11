@@ -10,174 +10,174 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer" />
   <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-image: url('5bab44cc233ff2a79_2400x1492.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        padding: 20px;
-        text-align: center;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        min-height: 100vh;
-        box-sizing: border-box;
-        margin: 0;
-    }
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('5bab44cc233ff2a79_2400x1492.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        box-sizing: border-box;
+        margin: 0;
+    }
 
-    body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: -1;
-    }
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
 
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-        width: 100%;
-        max-width: 600px;
-    }
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 600px;
+    }
 
-    h1 {
-        margin-bottom: 0;
-        color: #ffffff;
-        font-size: 2.2em;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        text-align: center;
-        letter-spacing: 1px;
-        word-wrap: break-word;
-    }
+    h1 {
+        margin-bottom: 0;
+        color: #ffffff;
+        font-size: 2.2em;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        text-align: center;
+        letter-spacing: 1px;
+        word-wrap: break-word;
+    }
 
-    .logo-tabanan {
-        width: 120px;
-        margin-bottom: 10px;
-        filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.4));
-    }
+    .logo-tabanan {
+        width: 120px;
+        margin-bottom: 10px;
+        filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.4));
+    }
 
-    .link-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
+    .link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
 
-    .link-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-        max-width: 500px;
-        margin: 10px auto;
-        padding: 16px 20px;
-        background: linear-gradient(135deg, #404040, #f2b7b8);
-        color: #ffffff;
-        text-decoration: none;
-        border-radius: 8px;
-        font-size: 17px;
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.35);
-        border: 1px solid #ffffff;
-        box-sizing: border-box;
-    }
+    .link-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        max-width: 500px;
+        margin: 10px auto;
+        padding: 16px 20px;
+        background: linear-gradient(135deg, #404040, #f2b7b8);
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 17px;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.35);
+        border: 1px solid #ffffff;
+        box-sizing: border-box;
+    }
 
-    .link-button:hover {
-        transform: scale(1.02);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.45);
-        background: linear-gradient(135deg, #606060, #ffcccc);
-        border-color: #f0f0f0;
-    }
+    .link-button:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.45);
+        background: linear-gradient(135deg, #606060, #ffcccc);
+        border-color: #f0f0f0;
+    }
 
-    .link-button i {
-        margin-right: 15px;
-        font-size: 22px;
-        color: #ffffff;
-        text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
-    }
+    .link-button i {
+        margin-right: 15px;
+        font-size: 22px;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    }
 
-    /* Media Query untuk layar tablet (landscape dan portrait, perkiraan lebar 768px - 1023px) */
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        body {
-            padding: 15px;
-        }
+    /* Media Query untuk layar tablet (landscape dan portrait, perkiraan lebar 768px - 1023px) */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        body {
+            padding: 15px;
+        }
 
-        .header-container {
-            margin-bottom: 25px;
-        }
+        .header-container {
+            margin-bottom: 25px;
+        }
 
-        h1 {
-            font-size: 2.5em;
-        }
+        h1 {
+            font-size: 2.5em;
+        }
 
-        .logo-tabanan {
-            width: 130px;
-        }
+        .logo-tabanan {
+            width: 130px;
+        }
 
-        .link-button {
-            width: 85%;
-            max-width: 550px;
-            padding: 17px 22px;
-            font-size: 18px;
-            border-radius: 9px;
-        }
+        .link-button {
+            width: 85%;
+            max-width: 550px;
+            padding: 17px 22px;
+            font-size: 18px;
+            border-radius: 9px;
+        }
 
-        .link-button i {
-            font-size: 24px;
-        }
-    }
+        .link-button i {
+            font-size: 24px;
+        }
+    }
 
-    /* Media Query untuk layar smartphone (max-width: 767px) - **PENYESUAIAN LEBIH LANJUT** */
-    @media screen and (max-width: 767px) {
-        body {
-            padding: 10px;
-        }
+    /* Media Query untuk layar smartphone (max-width: 767px) - **PENYESUAIAN LEBIH LANJUT** */
+    @media screen and (max-width: 767px) {
+        body {
+            padding: 10px;
+        }
 
-        .header-container {
-            margin-bottom: 15px;
-        }
+        .header-container {
+            margin-bottom: 15px;
+        }
 
-        h1 {
-            font-size: 1.8em;
-        }
+        h1 {
+            font-size: 1.8em;
+        }
 
-        .logo-tabanan {
-            width: 100px;
-        }
+        .logo-tabanan {
+            width: 100px;
+        }
 
-        .link-container {
-            padding-left: 15px; /* **NEW:** Padding kiri untuk link container */
-            padding-right: 15px; /* **NEW:** Padding kanan untuk link container */
-        }
+        .link-container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
 
-        .link-button {
-            width: auto; /* **MODIFIED:** Lebar tombol menjadi otomatis */
-            max-width: 95%; /* **MODIFIED:** Max width tombol menjadi 95% dari container */
-            margin-left: auto; /* **NEW:** Margin kiri otomatis untuk memusatkan */
-            margin-right: auto; /* **NEW:** Margin kanan otomatis untuk memusatkan */
-            margin-top: 8px;
-            margin-bottom: 8px;
-            padding: 14px 18px;
-            font-size: 16px;
-            border-radius: 7px;
-        }
+        .link-button {
+            width: auto;
+            max-width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            padding: 14px 18px;
+            font-size: 16px;
+            border-radius: 7px;
+        }
 
-        .link-button i {
-            margin-right: 10px;
-            font-size: 20px;
-        }
-    }
+        .link-button i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    }
 </style>
 </head>
 <body>
@@ -213,10 +213,10 @@
       <i class="fab fa-facebook"></i> Disbud
     </a>
     <a class="link-button" href="https://www.facebook.com/disdikkabtabanan?locale=id_ID" target="_blank">
-      <i class="fab fa-facebook"></i> Disdik Kab Tabanan
+      <i class="fab fa-facebook"></i> Disdik 
     </a>
     <a class="link-button" href="https://www.facebook.com/bapelitbang.tabanan?locale=id_ID" target="_blank">
-      <i class="fab fa-facebook"></i> Bapel Itbang
+      <i class="fab fa-facebook"></i> BapelItbang
     </a>
     <a class="link-button" href="https://www.facebook.com/KantorCamatSeltim?locale=id_ID" target="_blank">
       <i class="fab fa-facebook"></i> Kantor Camat Seltim
@@ -224,55 +224,55 @@
     <a class="link-button" href="https://www.facebook.com/Bagianumum123?locale=id_ID" target="_blank">
       <i class="fab fa-facebook"></i> Bagian Umum
     </a>
-    <a class="link-button" href="https://www.facebook.com/profile.php?id=100085452101669&locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/profile.php?id=100085452101669" target="_blank">
       <i class="fab fa-facebook"></i> Dinas Perikanan
     </a>
-    <a class="link-button" href="https://www.facebook.com/profile.php?id=100084527066116&locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/profile.php?id=100084527066116" target="_blank">
       <i class="fab fa-facebook"></i> Bakeuda
     </a>
     <a class="link-button" href="https://www.facebook.com/PrajaWibawaKabTabanan?locale=id_ID" target="_blank">
       <i class="fab fa-facebook"></i> Praja Wibawa Kab Tabanan
     </a>
-    <a class="link-button" href="https://www.facebook.com/profile.php?id=100084770837213&locale=id_ID" target="_blank">
-      <i class="fab fa-facebook"></i> Facebook Profile 6
+    <a class="link-button" href="https://www.facebook.com/profile.php?id=100084770837213" target="_blank">
+      <i class="fab fa-facebook"></i> Kecamatan Baturiti 
     </a>
-    <a class="link-button" href="https://www.facebook.com/kecamatan.tabanan.9?locale=id_ID" target="_blank">
-      <i class="fab fa-facebook"></i> Kecamatan Tabanan 9
+    <a class="link-button" href="https://www.facebook.com/kecamatan.tabanan.9" target="_blank">
+      <i class="fab fa-facebook"></i> Kecamatan Tabanan
     </a>
-    <a class="link-button" href="https://www.facebook.com/humasdprdtabanan?locale=id_ID" target="_blank">
-      <i class="fab fa-facebook"></i> Humas DPRD Tabanan
+    <a class="link-button" href="https://www.facebook.com/humasdprdtabanan" target="_blank">
+      <i class="fab fa-facebook"></i> Humas DPRD
     </a>
-    <a class="link-button" href="https://www.facebook.com/DispersipKabTabanan?locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/DispersipKabTabanan" target="_blank">
       <i class="fab fa-facebook"></i> Dispersip Kab Tabanan
     </a>
-    <a class="link-button" href="https://www.facebook.com/profile.php?id=100085065399644&locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/profile.php?id=100085065399644" target="_blank">
       <i class="fab fa-facebook"></i> Kecamatan_Pupuan
     </a>
-    <a class="link-button" href="https://www.facebook.com/profile.php?id=61557291334737&locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/profile.php?id=61557291334737" target="_blank">
       <i class="fab fa-facebook"></i> Kecamatan Selemadeg Barat
     </a>
-    <a class="link-button" href="https://www.facebook.com/brsud.kabtabanan.3?locale=id_ID" target="_blank">
-      <i class="fab fa-facebook"></i> BRSUD Kab
+    <a class="link-button" href="https://www.facebook.com/brsud.kabtabanan.3" target="_blank">
+      <i class="fab fa-facebook"></i> BRSUD 
     </a>
-    <a class="link-button" href="https://www.facebook.com/dinaskesehatantabanan?locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/dinaskesehatantabanan" target="_blank">
       <i class="fab fa-facebook"></i> Dinas Kesehatan
     </a>
-    <a class="link-button" href="https://www.facebook.com/dukcapiltbn?locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/dukcapiltbn" target="_blank">
       <i class="fab fa-facebook"></i> Dukcapil
     </a>
-    <a class="link-button" href="https://www.facebook.com/dlhtabanankab?locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/dlhtabanankab" target="_blank">
       <i class="fab fa-facebook"></i> DLH
     </a>
-    <a class="link-button" href="https://www.facebook.com/dinas.p.tabanan?locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/dinas.p.tabanan" target="_blank">
       <i class="fab fa-facebook"></i> Dinas Pertanian
     </a>
-        <a class="link-button" href="https://www.facebook.com/disperindagtbn?locale=id_ID" target="_blank">
+        <a class="link-button" href="https://www.facebook.com/disperindagtbn" target="_blank">
       <i class="fab fa-facebook"></i> Disperindag
     </a>
-    <a class="link-button" href="https://www.facebook.com/DPUPRPKPTabanan?locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/DPUPRPKPTabanan" target="_blank">
       <i class="fab fa-facebook"></i> DPUPR PKP
     </a>
-    <a class="link-button" href="https://www.facebook.com/profile.php?id=100092308552044&locale=id_ID" target="_blank">
+    <a class="link-button" href="https://www.facebook.com/profile.php?id=100092308552044" target="_blank">
       <i class="fab fa-facebook"></i> Puskesmas penebel2
     </a>
   </div>
